@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Pickup | GreenCycle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="GreenCycle Logo">
+        <span>GreenCycle</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book-pickup.html" class="active">Book Pickup</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <h1>Book a Recycling Pickup 🚛</h1>
+    <p>Fill in your details and we’ll schedule a pickup right at your doorstep.</p>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="form-section">
+    <div class="form-container">
+      <form id="pickupForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="address">Pickup Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+
+        <label for="waste">Type of Waste</label>
+        <select id="waste" name="waste" required>
+          <option value="">Select Waste Type</option>
+          <option value="plastic">Plastic Waste</option>
+          <option value="metal">Metal Waste</option>
+          <option value="ewaste">E-Waste</option>
+          <option value="paper">Paper Waste</option>
+        </select>
+
+        <label for="date">Preferred Pickup Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" class="btn">Submit Request</button>
+      </form>
+
+      <p id="confirmationMessage" class="confirmation hidden">
+        ✅ Your pickup request has been submitted successfully!
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GreenCycle Recycling Station | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<form id="pickupForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="address" placeholder="Address" required>
+    <select id="wasteType" required>
+      <option value="">Select Waste Type</option>
+      <option>Plastic</option>
+      <option>Metal</option>
+      <option>E-Waste</option>
+    </select>
+    <input type="date" id="pickupDate" required>
+    <input type="time" id="pickupTime" required>
+    <button type="submit">Submit</button>
+    <p id="msg"></p>
+  </form>
+  
+  <form id="bookingForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Your Phone" required>
+    <input type="text" name="address" placeholder="Pickup Address" required>
+    <select name="material">
+      <option value="Plastic">Plastic</option>
+      <option value="E-waste">E-waste</option>
+      <option value="Metal">Metal</option>
+    </select>
+    <input type="text" name="quantity" placeholder="Quantity (e.g. 5kg)" required>
+    <input type="date" name="date" required>
+    <button type="submit">Book Pickup</button>
+  </form>
+  
+  <p id="responseMsg"></p>
+  
+  <script>
+  document.getElementById("bookingForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+  
+    const formData = Object.fromEntries(new FormData(e.target).entries());
+  
+    const response = await fetch("http://localhost:3000/api/book-pickup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+  
+    const result = await response.json();
+    document.getElementById("responseMsg").innerText = result.message;
+  });
+  </script>
+  

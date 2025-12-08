@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root { --icon-stroke: #22323D; --accent: #1fb6ae; }
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+ /* index.css (append) */
+
+/* gentle fade-in helper */
+@keyframes fadeInSmall {
+  from { opacity: 0; transform: translateY(-6px) scale(.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-fadeIn { animation: fadeInSmall .22s ease forwards; }
+
+/* subtle blur sizes (if tailwind doesn't provide) */
+.blur-3xl { filter: blur(36px); }
+.blur-4xl { filter: blur(48px); }
+
+/* underline indicator for nav (optional)
+   Add <span class="underline-indicator"></span> under the nav item if you want */
+.underline-indicator {
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg,#34d399,#10b981);
+  transition: width .28s ease;
+}
+
+/* small pulse used in mega menu */
+@keyframes tinyPulse {
+  0% { transform: scale(1); opacity: .9 }
+  50% { transform: scale(1.2); opacity: .6 }
+  100% { transform: scale(1); opacity: .9 }
+}
+.animate-pulse { animation: tinyPulse 1.2s infinite ease-in-out; }
+
+/* responsive tweak: center mega menu on small screens */
+@media (max-width: 1024px) {
+  /* reduce mega width for medium screens */
+  #mega-panel { width: 90% !important; left: 50% !important; transform: translateX(-50%) !important; }
+}
