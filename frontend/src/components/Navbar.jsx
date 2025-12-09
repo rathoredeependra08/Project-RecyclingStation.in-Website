@@ -141,15 +141,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-gradient-to-br from-green-900/90 to-green-800/70 shadow-lg py-2 backdrop-blur-md" : "bg-transparent py-4"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+  ${isScrolled ? "bg-green-900/90 shadow-lg py-2" : "py-3"}
+  md:py-4`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* LOGO */}
         <div className="flex items-center gap-4 cursor-pointer" onClick={() => navigate("/")}>
           <div className="text-3xl font-extrabold text-white">♻️</div>
-          <div className="hidden sm:block">
+          <div className="block">
             <div className="text-white font-extrabold text-lg">Recycling<span className="text-emerald-300">Station</span></div>
             <div className="text-xs text-white/70 -mt-1">Sustainable Waste Solutions</div>
           </div>
@@ -196,7 +196,8 @@ export default function Navbar() {
   exit="hidden"
   variants={panelVariants}
   transition={{ duration: 0.20 }}
-  className={`absolute left-1/2 -translate-x-1/2 mt-3 w-[880px] 
+  className={`absolute left-1/2 -translate-x-1/2 mt-3 w-[90vw] md:w-[880px]
+ 
     bg-white/95 rounded-2xl shadow-2xl border border-gray-100 backdrop-blur-xl p-6 
     grid grid-cols-3 gap-6 z-40
     ${openMega ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}

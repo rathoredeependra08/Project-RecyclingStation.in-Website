@@ -7,6 +7,7 @@ import RecyclingProcessSVG from "../components/RecyclingProcessSVG";
 import IndustryGrid from "../components/IndustryGrid";
 import ImpactSection from "../components/ImpactSection";
 import Footer from "../components/Footer";
+import recyclingLogo from "../assets/recycling-station-logo.jpg";
 
 /**
  * Combined About page for 'Recycling Station'.
@@ -99,14 +100,14 @@ const Highlight = ({ children }) => (
 // Merged Intro Content for Hero
 const HeroIntroContent = ({ onCTAClick }) => (
   <>
-    <div className="flex items-start gap-8">
-      <div className="flex-1">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#052e1d] leading-tight">
+    <div className="flex flex-col md:flex-row items-center md:items-center gap-8">
+      <div className="w-[90%] md:w-[65%]">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#052e1d] leading-tight">
           About Recycling Station
         </h1>
 
         {/* Merged detailed intro from 1st code - KEYWORDS HIGHLIGHTED HERE */}
-        <p className="mt-4 max-w-3xl text-lg text-gray-700">
+        <p className="mt-3 max-w-4xl text-lg text-gray-700">
           <Highlight>Recycling Station</Highlight> is a modern waste-management and recycling company committed to making sustainability simple, reliable, and accessible for everyone. The platform delivers end-to-end <Highlight>multi-stream waste solutions</Highlight>, handling <Highlight>plastic waste</Highlight>, <Highlight>e-waste</Highlight>, <Highlight>hazardous materials</Highlight>, <Highlight>metal scrap</Highlight>, <Highlight>organic waste</Highlight>, and <Highlight>construction debris</Highlight> with complete safety and regulatory compliance. As a fully certified operation working under <Highlight>PCB/GPCB/CPCB guidelines</Highlight>, Recycling Station ensures every pickup, transfer, and processing step is transparent, traceable, and environmentally responsible.
 
           Powered by <Highlight>GPS-tracked collection vehicles</Highlight>, <Highlight>digital documentation</Highlight>, audit-ready reporting, and real-time dashboards, the system offers unmatched clarity and control for users. Whether it’s a home, residential society, small business, large industry, hospital, or commercial complex, Recycling Station adapts its services to meet diverse waste-handling needs with efficiency and professionalism.
@@ -116,8 +117,8 @@ const HeroIntroContent = ({ onCTAClick }) => (
           Driven by a mission to build a greener future, Recycling Station invites visitors to explore its services, schedule a pickup, or partner for long-term sustainable waste solutions. The platform blends technology, compliance, and care—creating a waste-management experience that is easy, trustworthy, and environmentally impactful.
         </p>
       </div>
-      <div className="text-9xl flex-shrink-36 mt-48">
-        <span role="img" aria-label="Recycling Logo">♻️</span>
+      <div className="w-[90%] md:w-[25%] flex justify-center">
+        <img src={recyclingLogo} alt="Recycling Station Logo" className="w-full h-auto object-contain" />
       </div>
     </div>
 
@@ -311,22 +312,22 @@ export default function AboutPage({ searchParams }) {
       {variant === "A4" && <HeroA4 onCTAClick={scrollTo} />}
 
       {/* --- 1. CORE VALUES (from 2nd code) --- */}
-      <section id="values" className="max-w-7xl mx-auto px-6 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#0f5132] mb-6">Our Core Principles</h2>
+      <section id="values" className="px-4 sm:px-6 md:px-12 lg:px-20 max-w-7xl mx-auto py-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f5132] mb-6 text-center">Our Core Principles</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <GradientBorderCard>
             <h3 className="text-2xl font-bold text-[#0f5132]">Strict Environmental Compliance</h3>
-            <p className="mt-3 text-gray-600">Every process is executed under certified, regulator-approved guidelines, ensuring your operations remain fully compliant with PCB norms.</p>
+            <p className="mt-3 text-sm sm:text-base md:text-lg leading-relaxed text-gray-600">Every process is executed under certified, regulator-approved guidelines, ensuring your operations remain fully compliant with PCB norms.</p>
           </GradientBorderCard>
 
           <GradientBorderCard>
             <h3 className="text-2xl font-bold text-[#0f5132]">Streamlined, Technology-Led</h3>
-            <p className="mt-3 text-gray-600">Digital tracking, automated workflows, and data-driven reporting bring clarity and operational ease to all waste handling logistics.</p>
+            <p className="mt-3 text-sm sm:text-base md:text-lg leading-relaxed text-gray-600">Digital tracking, automated workflows, and data-driven reporting bring clarity and operational ease to all waste handling logistics.</p>
           </GradientBorderCard>
 
           <GradientBorderCard>
             <h3 className="text-2xl font-bold text-[#0f5132]">Sustainable Resource Recovery</h3>
-            <p className="mt-3 text-gray-600">Our objective is maximum material recovery, recycling, and reintegration of resources back into the circular economy.</p>
+            <p className="mt-3 text-sm sm:text-base md:text-lg leading-relaxed text-gray-600">Our objective is maximum material recovery, recycling, and reintegration of resources back into the circular economy.</p>
           </GradientBorderCard>
         </div>
       </section>
@@ -484,4 +485,4 @@ export default function AboutPage({ searchParams }) {
       </section>
     </main>
   );
-}
+} 

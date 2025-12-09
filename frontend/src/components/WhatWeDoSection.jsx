@@ -4,7 +4,7 @@ import backgroundImage from "../assets/Gemini_Generated_Image_8zbrto8zbrto8zbr.p
 
 const WhatWeDoSection = () => {
   return (
-    <section className="relative w-full h-[100vh] overflow-hidden flex items-center justify-center">
+    <section className="relative w-full h-[67vh] overflow-hidden flex items-center justify-center bg-cover bg-center md:bg-fixed">
       {/* Background Image with Parallax & Overlay */}
       <motion.div
         className="absolute inset-0 bg-cover bg-center"

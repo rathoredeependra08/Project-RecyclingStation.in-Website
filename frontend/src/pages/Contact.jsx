@@ -77,7 +77,7 @@ export default function ContactPage() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            opacity: 0.4,
+            opacity: 0.5,
           }}
           aria-hidden
         />

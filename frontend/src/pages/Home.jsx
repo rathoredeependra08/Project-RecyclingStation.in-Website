@@ -16,9 +16,10 @@ import ImpactSection from "../components/ImpactSection";
 const Home = () => {
   return (
     <>
+   
+
       
       <Hero />
-      <Navbar />
         <About />
         <ExpertiseSection />
           <WhyChooseSection />   
