@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -102,18 +103,18 @@ export default function ContactPage() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="/request-pickup"
+                <Link
+                  to="/request-pickup"
                   className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-[#00A651] text-white font-semibold shadow hover:scale-[1.02] transition"
                 >
                   Request Pickup
-                </a>
-                <a
-                  href="/request-site-visit"
+                </Link>
+                <Link
+                  to="/home"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-[#00A651] text-[#0f5132] font-semibold bg-white hover:bg-[#f7fff8] transition"
                 >
                   Book a Site Visit
-                </a>
+                </Link>
                 <a
                   href="/contact#talk"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/60 text-[#0f5132] font-semibold shadow hover:bg-white transition"
@@ -258,9 +259,9 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noreferrer"
                   className="text-sm text-[#00A651] font-semibold"
-                
+                >
                   Open in Maps
-                a></a>
+                </a>
               </div>
               <div className="w-full h-64 bg-gray-50">
                 <iframe
