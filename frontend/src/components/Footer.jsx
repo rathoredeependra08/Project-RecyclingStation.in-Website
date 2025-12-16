@@ -74,33 +74,36 @@ export default function Footer() {
             <div>
               <h4 className="text-sm font-semibold text-white mb-4">SERVICES</h4>
               <ul className="space-y-3 text-gray-300">
-                <li>
-                  <Link to="/services/plastic-waste" className="hover:text-emerald-300 transition">
-                    Plastic Waste Recycling
+
+                 <li>
+                  <Link to="/services/hazardous-waste" className="hover:text-emerald-300 transition">
+                    Hazardous Waste 
                   </Link>
                 </li>
+                 <li>
+                  <Link to="/services/Oil-waste" className="hover:text-emerald-300 transition">
+                    Oil Waste Management
+                  </Link>
+                </li>
+                
                 <li>
                   <Link to="/services/Industrial-waste" className="hover:text-emerald-300 transition">
                     Industrial Waste Management
                   </Link>
-                </li>
-                <li>
-                  <Link to="/services/hazardous-waste" className="hover:text-emerald-300 transition">
-                    Hazardous Waste
+                </li><li>
+                  <Link to="/services/plastic-waste" className="hover:text-emerald-300 transition">
+                    Plastic Waste Recycling
                   </Link>
                 </li>
+               
                 <li>
-                  <Link to="/services/Rubber Scrap waste" className="hover:text-emerald-300 transition">
+                  <Link to="/services/rubber-scrap" className="hover:text-emerald-300 transition">
                     Rubber Scrap waste
                   </Link>
                 </li>
+                
                 <li>
-                  <Link to="/services/organic-waste" className="hover:text-emerald-300 transition">
-                    Organic Waste
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services/E-Waste Management" className="hover:text-emerald-300 transition">
+                  <Link to="/services/e-waste" className="hover:text-emerald-300 transition">
                     E-Waste Management
                   </Link>
                 </li>

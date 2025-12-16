@@ -5,11 +5,10 @@ import { CheckCircle } from "lucide-react";
 const WhyChooseSection = () => {
   const features = [
     "Best Price for Scrap Materials",
-    "Email & SMS Notifications for Collections",
     "Vehicles with 100% Valid Documents",
-    "Trained & PPE-compliant Workforce",
+    "Trained Workforce",
     "GPCB-authorized & Documented Compliance",
-    "GPS-mounted Fleet & Real-time Tracking",
+    "GPCB Compliance for all Scrap",
     "Waste Assessment & Reporting",
     "Hassle-free Scheduling & Pickup",
     "Technology-driven Transparent Process",
@@ -19,16 +18,14 @@ const WhyChooseSection = () => {
   const descriptions = {
     "Best Price for Scrap Materials":
       "Transparent valuation and fair pay for all material types.",
-    "Email & SMS Notifications for Collections":
-      "Receive instant confirmations and receipts for every pickup.",
     "Vehicles with 100% Valid Documents":
       "All our vehicles are documented, insured, and compliant.",
-    "Trained & PPE-compliant Workforce":
+    "Trained Workforce":
       "Skilled teams following safety protocols and trained handling.",
     "GPCB-authorized & Documented Compliance":
       "Certified processes with full documentation for audits.",
-    "GPS-mounted Fleet & Real-time Tracking":
-      "Track pickups live — from scheduling to handover.",
+    "GPCB Compliance for all Scrap":
+      "Ensure 100% GPCB regulatory adherence for all your scrap materials.",
     "Waste Assessment & Reporting":
       "We audit, classify and report your waste streams professionally.",
     "Hassle-free Scheduling & Pickup":

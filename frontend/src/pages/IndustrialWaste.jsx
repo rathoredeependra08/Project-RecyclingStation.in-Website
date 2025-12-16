@@ -5,8 +5,16 @@ export default function IndustrialWaste() {
     <div className="pt-28 bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="w-full bg-green-900 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative overflow-hidden w-full text-white py-20 px-6">
+        <div
+          className="absolute inset-0"
+          aria-hidden
+          style={{
+            background: `url(https://tse2.mm.bing.net/th/id/OIP.4MyT40n5SPl8zUVVTEH6AAHaEO?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) center/cover, linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%)`,
+            filter: 'blur(5px)',
+          }}
+        />
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Industrial Waste Management
           </h1>
@@ -15,7 +23,7 @@ export default function IndustrialWaste() {
             Safe, compliant removal and high-value material recovery.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-200 text-lg">
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-350 text-lg">
             <span>✔ Bulk Logistics & Scheduling</span>
             <span>✔ On-site Modular Treatments</span>
             <span>✔ Data-driven Reporting</span>

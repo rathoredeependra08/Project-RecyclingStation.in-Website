@@ -5,17 +5,18 @@ export default function EWaste() {
     <div className="pt-28 bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="w-full bg-green-900 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="w-full relative text-white py-20 px-6">
+        <div className="absolute inset-0 bg-[url('https://img.freepik.com/premium-photo/recycle-bin-full-e-waste-as-concept-e-waste-management_1041953-8866.jpg?w=2000')] bg-cover bg-center blur-[5px]"></div>
+        <div className="relative max-w-8xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-            E-Waste Recycling & Secure Disposal
+          E-Waste Recycling & Secure Disposal
           </h1>
           <p className="mt-5 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
             Secure collection, data-safe destruction, and certified recycling of electronic waste
             including batteries, PCBs and consumer electronics.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-200 text-lg">
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-350 text-lg">
             <span>✔ Data Destruction & Chain-of-Custody</span>
             <span>✔ Precious Metal Recovery</span>
             <span>✔ Environmentally Responsible Recycling</span>

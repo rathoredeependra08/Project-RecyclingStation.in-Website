@@ -18,6 +18,7 @@ const PlasticWaste = lazy(() => import("./pages/PlasticWaste"));
 const IndustrialWaste = lazy(() => import("./pages/IndustrialWaste"));
 const EWaste = lazy(() => import("./pages/EWaste"));
 const RubberScrap = lazy(() => import("./pages/RubberScrap"));
+const OilWaste = lazy( () => import("./pages/OilWaste"));
 const Consulting = lazy(() => import("./pages/Consulting"));
 const BookPickup = lazy(() => import("./pages/BookPickup"));
 
@@ -45,7 +46,10 @@ export default function App() {
           <Route path="/services/plastic-waste" element={<PlasticWaste />} />
           <Route path="/services/industrial-waste" element={<IndustrialWaste />} />
           <Route path="/services/e-waste" element={<EWaste />} />
+           <Route path="/services/Oil-waste" element={<OilWaste />} />
           <Route path="/services/rubber-scrap" element={<RubberScrap />} />
+         
+
 
           {/* Book Pickup */}
           <Route path="/request-pickup" element={<BookPickup />} />

@@ -5,8 +5,16 @@ export default function PlasticWaste() {
     <div className="pt-28 bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="w-full bg-green-900 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative overflow-hidden w-full text-white py-20 px-6">
+        <div
+          className="absolute inset-0"
+          aria-hidden
+          style={{
+            background: `url(https://s01.sgp1.cdn.digitaloceanspaces.com/book/160445-hnizwiwtcs-1623922140.jpg) center/cover, linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%)`,
+            filter: 'blur(8px)',
+          }}
+        />
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Plastic Waste Management
           </h1>
@@ -15,7 +23,7 @@ export default function PlasticWaste() {
             retail, and municipal partners. Certified, efficient and fully documented.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-200 text-lg">
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-350 text-lg">
             <span>✔ Industrial & Post-consumer Streams</span>
             <span>✔ Certified Recycling Certificates</span>
             <span>✔ Transparent Chain of Custody</span>
@@ -142,7 +150,7 @@ export default function PlasticWaste() {
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
             <li>GPCB Authorization and permits</li>
             <li>Form 10 and other required manifests</li>
-            <li>Insurance coverage for transport & handling</li>
+            <li>GPCB/CPCB Consent to Operate (CTO) and adhere strictly to Plastic Waste Management (PWM) Rules.</li>
             <li>Periodic employee training & PPE audits</li>
           </ul>
         </div>

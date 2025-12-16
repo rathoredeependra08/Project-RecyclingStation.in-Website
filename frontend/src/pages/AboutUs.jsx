@@ -94,7 +94,7 @@ const GradientBorderCard = ({ children, className = "" }) => (
 
 // Component for highlighting keywords
 const Highlight = ({ children }) => (
-  <span className="p-1 rounded bg-[#e6fff3] font-bold text-[#052e1d]">{children}</span>
+  <span className="font-bold text-[#052e1d]">{children}</span>
 );
 
 // Merged Intro Content for Hero
@@ -102,15 +102,16 @@ const HeroIntroContent = ({ onCTAClick }) => (
   <>
     <div className="flex flex-col md:flex-row items-center md:items-center gap-8">
       <div className="w-[90%] md:w-[65%]">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#052e1d] leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#052e1d]">
           About Recycling Station
         </h1>
 
         {/* Merged detailed intro from 1st code - KEYWORDS HIGHLIGHTED HERE */}
-        <p className="mt-3 max-w-4xl text-lg text-gray-700">
-          <Highlight>Recycling Station</Highlight> is a modern waste-management and recycling company committed to making sustainability simple, reliable, and accessible for everyone. The platform delivers end-to-end <Highlight>multi-stream waste solutions</Highlight>, handling <Highlight>plastic waste</Highlight>, <Highlight>e-waste</Highlight>, <Highlight>hazardous materials</Highlight>, <Highlight>metal scrap</Highlight>, <Highlight>organic waste</Highlight>, and <Highlight>construction debris</Highlight> with complete safety and regulatory compliance. As a fully certified operation working under <Highlight>PCB/GPCB/CPCB guidelines</Highlight>, Recycling Station ensures every pickup, transfer, and processing step is transparent, traceable, and environmentally responsible.
+        <p className="mt-3 max-w-4xl text-lg text-white text-justify">
+          
+          <Highlight>Recycling Station</Highlight> is a modern waste-management and recycling company committed to making sustainability simple, reliable, and accessible for everyone. The platform delivers end-to-end <Highlight>multi-stream waste solutions,</Highlight> handling <Highlight>plastic waste,</Highlight> <Highlight>e-waste,</Highlight><Highlight>hazardous materials,</Highlight> <Highlight>metal scrap,</Highlight> <Highlight>organic waste,</Highlight>and<Highlight>construction debris</Highlight>with complete safety and regulatory compliance. As a fully certified operation working under<Highlight>PCB/GPCB/CPCB guidelines,</Highlight>Recycling Station ensures every pickup, transfer, and processing step is transparent, traceable, and environmentally responsible.
 
-          Powered by <Highlight>GPS-tracked collection vehicles</Highlight>, <Highlight>digital documentation</Highlight>, audit-ready reporting, and real-time dashboards, the system offers unmatched clarity and control for users. Whether it’s a home, residential society, small business, large industry, hospital, or commercial complex, Recycling Station adapts its services to meet diverse waste-handling needs with efficiency and professionalism.
+          Powered by <Highlight>GPS-tracked collection vehicles,</Highlight> <Highlight>digital documentation,</Highlight> audit-ready reporting, and real-time dashboards, the system offers unmatched clarity and control for users. Whether it’s a home, residential society, small business, large industry, hospital, or commercial complex, Recycling Station adapts its services to meet diverse waste-handling needs with efficiency and professionalism.
 
           With its <Highlight>state-of-the-art processing plant located in Ahmedabad, Gujarat</Highlight>. The company plays a key role in reducing landfill dependency and strengthening India’s circular economy. Over the years, Recycling Station has helped divert significant tonnes of waste from landfills, increased material recovery rates, reduced carbon emissions, and contributed to cleaner, healthier cities.
 
@@ -133,14 +134,15 @@ const HeroIntroContent = ({ onCTAClick }) => (
 
 // Hero Variant A1: Eco Gradient Mesh
 const HeroA1 = (props) => {
+  const imageUrl = "https://img.freepik.com/premium-photo/landfill-operation-trucks-action-smoking-stacks-backdrop-stark-pollution-reality_39665-10275.jpg?w=2000";
   return (
     <header className="relative overflow-hidden">
       <div
         className="absolute inset-0"
         aria-hidden
         style={{
-          background:
-            "radial-gradient(1200px 600px at 10% 10%, rgba(0,166,81,0.06), transparent 10%), radial-gradient(1000px 500px at 90% 90%, rgba(52,211,153,0.04), transparent 12%), linear-gradient(180deg,#f3fff7 0%, #f9fff9 100%)",
+          background: `url(${imageUrl}) center/cover, radial-gradient(1200px 600px at 10% 10%, rgba(0,166,81,0.06), transparent 10%), radial-gradient(1000px 500px at 90% 90%, rgba(52,211,153,0.04), transparent 12%), linear-gradient(180deg,#f3fff7 0%, #f9fff9 100%)`,
+          filter: 'blur(5px)',
         }}
       />
       <motion.div

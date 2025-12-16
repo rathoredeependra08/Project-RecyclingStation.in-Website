@@ -59,6 +59,13 @@ const SERVICES = [
         loader: () => import("../pages/EWaste"),
       },
       {
+        id: "oil",
+        title: "Oil Waste Management",
+        desc: "Collection & recycling of used oil waste.",
+        icon: "settings",
+        route: "/services/oil-waste",
+        loader: () => import("../pages/OilWaste"),
+      },{
         id: "rubber",
         title: "Rubber Scrap Waste",
         desc: "Recycling & resale solutions for rubber scrap.",
@@ -314,3 +321,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+

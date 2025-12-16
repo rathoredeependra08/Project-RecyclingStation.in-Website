@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2, FileText, ShieldCheck } from "lucide-react";
 
 const certifications = [
-  "100% PCB Compliance",
+  "100% GPCB and CPCB Compliance",
   "GPCB Approved",
   "Regulatory Updates on GPCB and CPCB",
   '"Zero Landfills" Certificate for Industrial Garbage',

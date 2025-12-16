@@ -88,7 +88,7 @@ const About = () => {
               className="bg-white shadow-md rounded-xl p-6 border-l-4 border-lime-500"
             >
               <ShieldCheck className="w-10 h-10 text-lime-600 mb-3" />
-              <h3 className="font-semibold text-lg text-gray-800">GPCB Authorized</h3>
+              <h3 className="font-semibold text-lg text-gray-800">CPCB & GPCB Authorized</h3>
               <p className="text-sm text-gray-600 mt-1">
                 Certified and approved recycler recognized by the Gujarat Pollution Control Board.
               </p>

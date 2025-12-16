@@ -5,8 +5,16 @@ export default function HazardousWaste() {
     <div className="pt-28 bg-gray-50 text-gray-800">
 
       {/* ============================= HERO SECTION ============================= */}
-      <section className="w-full bg-green-900 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative overflow-hidden w-full text-white py-20 px-6">
+        <div
+          className="absolute inset-0"
+          aria-hidden
+          style={{
+            background: `url(https://safetyeducations.com/wp-content/uploads/2024/11/image-3.png) center/cover, linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%)`,
+            filter: 'blur(8px)',
+          }}
+        />
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Hazardous Waste Management Services
           </h1>
@@ -17,7 +25,7 @@ export default function HazardousWaste() {
             Backed by 25+ years of expertise and 100% GPCB compliance.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-200 text-lg">
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-350 text-lg">
             <span>✔ Zero-Risk Handling</span>
             <span>✔ GPCB Authorized</span>
             <span>✔ Full Documentation</span>
@@ -43,7 +51,7 @@ export default function HazardousWaste() {
           <ul className="space-y-6 text-lg leading-relaxed">
             <li>
               🌿 <b>Certified Hazardous Waste Experts</b> — Our workforce is trained in
-              chemical handling, biomedical protocols, and high-risk waste management.
+              chemical handling, Toxic waste protocols, and high-risk waste management.
             </li>
 
             <li>
@@ -86,18 +94,16 @@ export default function HazardousWaste() {
           <div className="grid md:grid-cols-2 gap-10 text-lg">
 
             <div className="p-6 bg-gray-100 rounded-xl border border-gray-300 shadow-sm">
-              <h3 className="text-xl font-semibold text-green-700 mb-2">Chemical Waste</h3>
+              <h3 className="text-xl font-semibold text-green-700 mb-2">Hazardous Waste</h3>
               <p>
-                Includes industrial solvents, acids, alkalis, sludge, expired chemicals,
-                resins, oil-contaminated waste and heavy-metal materials.
+                Trusted hazardous waste services delivering safe handling, certified disposal, and eco-friendly recycling practices.
               </p>
             </div>
 
             <div className="p-6 bg-gray-100 rounded-xl border border-gray-300 shadow-sm">
-              <h3 className="text-xl font-semibold text-green-700 mb-2">Biomedical Waste</h3>
+              <h3 className="text-xl font-semibold text-green-700 mb-2">Oil Waste</h3>
               <p>
-                Sharps, blood-contaminated materials, pathological waste, and
-                microbiological lab waste collected with full PPE and bio-safety standards.
+               Responsible oil waste management with secure collection, recycling, and compliant disposal for industries and service centers
               </p>
             </div>
 
@@ -239,8 +245,8 @@ export default function HazardousWaste() {
             </div>
 
             <div>
-              <b>4. Can you handle chemical or biomedical waste?</b>
-              <p>Yes, our facility and team are approved for chemical, toxic, biomedical and industrial hazardous waste streams.</p>
+              <b>4. Can you handle chemical  waste?</b>
+              <p>Yes, our facility and team are approved for chemical, toxic and industrial hazardous waste streams.</p>
             </div>
 
             <div>
