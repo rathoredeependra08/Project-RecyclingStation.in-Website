@@ -158,7 +158,7 @@ export default function Navbar() {
           <div className="text-3xl font-extrabold text-white">♻️</div>
           <div className="block">
             <div className="text-white font-extrabold text-lg">Recycling<span className="text-emerald-300">Station</span></div>
-            <div className="text-xs text-white/70 -mt-1">Sustainable Waste Solutions</div>
+            <div className="text-xs text-white/70 -mt-1">Waste Management Company</div>
           </div>
         </div>
 

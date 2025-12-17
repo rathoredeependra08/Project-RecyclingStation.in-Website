@@ -7,7 +7,7 @@ import RecyclingProcessSVG from "../components/RecyclingProcessSVG";
 import IndustryGrid from "../components/IndustryGrid";
 import ImpactSection from "../components/ImpactSection";
 import Footer from "../components/Footer";
-import recyclingLogo from "../assets/recycling-station-logo.jpg";
+
 
 /**
  * Combined About page for 'Recycling Station'.
@@ -102,25 +102,27 @@ const HeroIntroContent = ({ onCTAClick }) => (
   <>
     <div className="flex flex-col md:flex-row items-center md:items-center gap-8">
       <div className="w-[90%] md:w-[65%]">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#052e1d]">
-          About Recycling Station
-        </h1>
+        
 
         {/* Merged detailed intro from 1st code - KEYWORDS HIGHLIGHTED HERE */}
-        <p className="mt-3 max-w-4xl text-lg text-white text-justify">
-          
-          <Highlight>Recycling Station</Highlight> is a modern waste-management and recycling company committed to making sustainability simple, reliable, and accessible for everyone. The platform delivers end-to-end <Highlight>multi-stream waste solutions,</Highlight> handling <Highlight>plastic waste,</Highlight> <Highlight>e-waste,</Highlight><Highlight>hazardous materials,</Highlight> <Highlight>metal scrap,</Highlight> <Highlight>organic waste,</Highlight>and<Highlight>construction debris</Highlight>with complete safety and regulatory compliance. As a fully certified operation working under<Highlight>PCB/GPCB/CPCB guidelines,</Highlight>Recycling Station ensures every pickup, transfer, and processing step is transparent, traceable, and environmentally responsible.
+         <div className="mt-8 flex flex-wrap gap-4 items-center">
+          <h2 className="text-5xl font-bold text-green-350 mb-6">
+            About <span className="text-green-350 text lg">Recycling Station's</span>
+          </h2>
+          <p className="mt-8 text-lg md:text-xl text-gray-100 max-w-7xl mx-auto">
+           At Recycling Station, we believe that waste is not an end, but a new beginning. By bridging the gap between industrial necessity and environmental responsibility, we provide more than just a service—we provide a sustainable legacy.
 
-          Powered by <Highlight>GPS-tracked collection vehicles,</Highlight> <Highlight>digital documentation,</Highlight> audit-ready reporting, and real-time dashboards, the system offers unmatched clarity and control for users. Whether it’s a home, residential society, small business, large industry, hospital, or commercial complex, Recycling Station adapts its services to meet diverse waste-handling needs with efficiency and professionalism.
+Our technology-driven approach ensures that every kilogram of plastic, metal, or hazardous material is tracked, treated, and transformed with 100% transparency. As we expand our digital platform and physical infrastructure across the nation, our goal remains clear: to eliminate the concept of "waste" entirely and empower a circular economy where resources are preserved for generations to come.Through certified compliance and innovative logistics, we turn environmental challenges into shared successes. Partner with us to redefine accountability and build a cleaner, greener tomorrow.</p>
 
-          With its <Highlight>state-of-the-art processing plant located in Ahmedabad, Gujarat</Highlight>. The company plays a key role in reducing landfill dependency and strengthening India’s circular economy. Over the years, Recycling Station has helped divert significant tonnes of waste from landfills, increased material recovery rates, reduced carbon emissions, and contributed to cleaner, healthier cities.
-
-          Driven by a mission to build a greener future, Recycling Station invites visitors to explore its services, schedule a pickup, or partner for long-term sustainable waste solutions. The platform blends technology, compliance, and care—creating a waste-management experience that is easy, trustworthy, and environmentally impactful.
-        </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-green-300 text-lg">
+            <span>✔ Secure Handling</span>
+            <span>✔ GPCB & CPCB Authorized</span>
+            <span>✔ Full Documentation</span>
+            <span>✔ Industrial Grade Safety</span>
+          </div>
+        </div>
       </div>
-      <div className="w-[90%] md:w-[25%] flex justify-center">
-        <img src={recyclingLogo} alt="Recycling Station Logo" className="w-full h-auto object-contain" />
-      </div>
+      
     </div>
 
     <div className="mt-8 flex flex-wrap gap-4 items-center">
@@ -142,7 +144,7 @@ const HeroA1 = (props) => {
         aria-hidden
         style={{
           background: `url(${imageUrl}) center/cover, radial-gradient(1200px 600px at 10% 10%, rgba(0,166,81,0.06), transparent 10%), radial-gradient(1000px 500px at 90% 90%, rgba(52,211,153,0.04), transparent 12%), linear-gradient(180deg,#f3fff7 0%, #f9fff9 100%)`,
-          filter: 'blur(5px)',
+          filter: 'blur(8px)',
         }}
       />
       <motion.div
@@ -479,7 +481,7 @@ export default function AboutPage({ searchParams }) {
        <RecyclingProcessSVG />
         <IndustryGrid />
        <ImpactSection />
-        <footer />
+        <Footer />
         </>
       {/* --- 7. CTA FOOTER (from 2nd code, content updated) --- */}
       <section className="max-w-7xl mx-auto px-6 py-12">
