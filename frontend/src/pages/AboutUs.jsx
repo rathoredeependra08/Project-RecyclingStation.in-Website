@@ -275,7 +275,7 @@ export default function AboutPage({ searchParams }) {
   const [testiIndex, setTestiIndex] = useState(0);
   const testimonials = [
     { name: "Suresh Kumar", role: "Facility Manager — Auto Component Plant", quote: "Recycling Station improved our scrap recovery by 40% and simplified regulatory reporting." },
-    { name: "Dr. Meera Patel", role: "Hospital Admin", quote: "Their biomedical and hazardous handling is methodical and audit-ready — highly recommended." },
+    { name: "Rajesh Mehta", role: "Operations Head, Gujarat Industrial Cluster", quote: "Managing hazardous waste was a major compliance headache for our  plant until we partnered with Recycling Station. Their automated manifest system and timely GPCB-compliant disposal have made our audits 100% stress-free." },
     { name: "Anita Verma", role: "Residential Committee Head", quote: "The pickup scheduling and rewards made our colony actively recycle for the first time." },
   ];
 
@@ -481,12 +481,10 @@ export default function AboutPage({ searchParams }) {
        <RecyclingProcessSVG />
         <IndustryGrid />
        <ImpactSection />
-        <Footer />
+       
         </>
       {/* --- 7. CTA FOOTER (from 2nd code, content updated) --- */}
-      <section className="max-w-7xl mx-auto px-6 py-12">
-        <GradientCTA />
-      </section>
+      
     </main>
   );
 } 
