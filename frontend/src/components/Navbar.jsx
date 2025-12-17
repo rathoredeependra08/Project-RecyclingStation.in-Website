@@ -277,7 +277,7 @@ export default function Navbar() {
 
         {/* RIGHT ACTIONS */}
         <div className="hidden md:flex items-center gap-4">
-          <button onClick={() => navigate("/Admin-Login")} className="bg-white text-emerald-800 px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
+          <button onClick={() => navigate("/admin-login")} className="bg-white text-emerald-800 px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
             Admin Login
           </button>
         </div>
@@ -313,7 +313,8 @@ export default function Navbar() {
               </div>
 
               <button onClick={() => { navigate("/about"); setMobileOpen(false); }} className="block text-slate-700 mb-3">About Us</button>
-              <button onClick={() => { navigate("/contact"); setMobileOpen(false); }} className="block text-slate-700">Contact</button>
+              <button onClick={() => { navigate("/contact"); setMobileOpen(false); }} className="block text-slate-700 mb-3">Contact</button>
+              <button onClick={() => { navigate("/admin-login"); setMobileOpen(false); }} className="block bg-emerald-600 text-white px-4 py-2 rounded-full font-semibold mt-4">Admin Login</button>
             </div>
           </motion.div>
         )}

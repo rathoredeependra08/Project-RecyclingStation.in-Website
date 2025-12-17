@@ -106,8 +106,8 @@ const HeroIntroContent = ({ onCTAClick }) => (
 
         {/* Merged detailed intro from 1st code - KEYWORDS HIGHLIGHTED HERE */}
          <div className="mt-8 flex flex-wrap gap-4 items-center">
-          <h2 className="text-5xl font-bold text-green-350 mb-6">
-            About <span className="text-green-350 text lg">Recycling Station's</span>
+          <h2 className="text-4xl font-bold text-green-350 mb-6">
+             <span className="block bg-emerald-600 text-white px-6 py-2 rounded-full font-semibold mt-4"> About Recycling Station's</span>
           </h2>
           <p className="mt-8 text-lg md:text-xl text-gray-100 max-w-7xl mx-auto">
            At Recycling Station, we believe that waste is not an end, but a new beginning. By bridging the gap between industrial necessity and environmental responsibility, we provide more than just a service—we provide a sustainable legacy.
