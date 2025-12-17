@@ -277,7 +277,7 @@ export default function Navbar() {
 
         {/* RIGHT ACTIONS */}
         <div className="hidden md:flex items-center gap-4">
-          <button onClick={() => navigate("/admin-login")} className="bg-white text-emerald-800 px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
+          <button onClick={() => navigate("/Admin-Login")} className="bg-white text-emerald-800 px-4 py-2 rounded-full font-semibold hover:scale-105 transition">
             Admin Login
           </button>
         </div>

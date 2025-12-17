@@ -21,6 +21,7 @@ const RubberScrap = lazy(() => import("./pages/RubberScrap"));
 const OilWaste = lazy( () => import("./pages/OilWaste"));
 const Consulting = lazy(() => import("./pages/Consulting"));
 const BookPickup = lazy(() => import("./pages/BookPickup"));
+const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 
 export default function App() {
   return (
@@ -53,6 +54,9 @@ export default function App() {
 
           {/* Book Pickup */}
           <Route path="/request-pickup" element={<BookPickup />} />
+
+          {/* Admin Login */}
+          <Route path="/admin-login" element={<AdminLogin />} />
 
           {/* Fallback */}
           <Route path="*" element={<Home />} />
