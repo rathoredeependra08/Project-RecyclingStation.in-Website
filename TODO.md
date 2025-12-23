@@ -1,13 +1,4 @@
-# TODO: Update About Page
+# Logo Replacement Task
 
-- [x] Remove GIF image from frontend/src/components/About.jsx (remove the left motion.div containing the animated GIF)
-- [x] Update frontend/src/pages/About.jsx to import About component and replace text content with <About /> for full page coverage
-
-# TODO: Create Missing Service Pages
-
-- [x] Create HazardousWaste.jsx
-- [x] Create PlasticWaste.jsx
-- [x] Create IndustrialWaste.jsx
-- [x] Create EWaste.jsx
-- [x] Create RubberScrap.jsx
-- [x] Create Consulting.jsx
+- [x] Import the recycling-station-logo.jpg image in Navbar.jsx
+- [x] Replace the emoji div with an img tag in the logo section, maintaining the same size (30px height)

@@ -136,14 +136,14 @@ export default function ContactPage() {
                     title="Head Office (Plant)"
                     line1={<span>Processing Plant — <strong className="text-[#0f5132]">Ahmedabad, Gujarat</strong></span>}
                     line2="BlockNO.731,PlotNo.5&6,Giriraj Industrial Estate-2,Paldi Kankaj,Daskroi,Ahmedabad,Gujarat-382425"
-                    phone="+91 9099911919"
+                    phone="+91 9099996900"
                   />
                   <ContactCard
                     title="Sales & Operations"
                     line1="Phone"
-                    line2="+91 9099911919"
-                    phone="+91 9099911919"
-                    whatsapp="+919099911919"
+                    line2="+91 9099996900"
+                    phone="+91 9099996900"
+                    whatsapp="+919099996900"
                   />
                   <ContactCard
                     title="Email"
